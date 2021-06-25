@@ -1,0 +1,15 @@
+<p>compteur works!</p>
+
+<p *ngIf="timer>=0" style="color: green;">{{timer}}</p>
+<p *ngIf="timer < 0" style="color: red;">{{timer}}</p>
+
+
+<div>
+    <button (click)="increment1()">+1</button>
+    <button (click)="increment5()">+5</button>
+</div>
+
+<div>
+    <button (click)="decrement1()">-1</button>
+    <button (click)="decrement5()">-5</button>
+</div>

@@ -1,0 +1,19 @@
+
+<p>{{myString}}</p>
+
+<button (click)="changeF('bonjour')">changer la valeur</button>
+
+<p *ngFor="let element of tiroir">
+    {{element}}
+</p>
+
+<input type="text" #addInput>
+
+<button (click)="changeF(addInput.value)">changer la valeur</button>
+
+
+
+<a routerLink = "/second-component">Lien vers le seconde component</a>
+
+<h1>{{testService.testVariable}}</h1>
+
